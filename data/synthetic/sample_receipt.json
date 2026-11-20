@@ -1,0 +1,38 @@
+{
+  "supplier": "Demo Community Distributor (synthetic)",
+  "delivery_ref": "DEMO-DELIVERY-0001",
+  "warehouse": "DEMO-DOCK-1",
+  "purchase_order_ref": "DEMO-PO-0001",
+  "received_on": "2026-11-17",
+  "notes": "Synthetic demo only. All quantities were deliberately supplied by the fixture author.",
+  "lines": [
+    {
+      "line_id": "demo-line-beans",
+      "product_id": "DEMO-BEANS-CASE",
+      "barcode": "029000000018",
+      "description": "Black beans, 12 x 15 oz case",
+      "quantity": 8,
+      "unit": "case",
+      "measured_weight": null,
+      "weight_unit": null,
+      "lot": "DEMO-LOT-A1",
+      "expiry_date": "2030-12-31",
+      "disposition": "available",
+      "checked": false
+    },
+    {
+      "line_id": "demo-line-apples",
+      "product_id": "DEMO-APPLES-LB",
+      "barcode": "",
+      "description": "Mixed apples",
+      "quantity": 42.5,
+      "unit": "lb",
+      "measured_weight": 42.5,
+      "weight_unit": "lb",
+      "lot": "",
+      "expiry_date": null,
+      "disposition": "available",
+      "checked": false
+    }
+  ]
+}

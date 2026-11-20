@@ -1,0 +1,230 @@
+[
+  {
+    "product_id": "DEMO-BEANS-CASE",
+    "name": "Black beans, 12 x 15 oz case",
+    "barcode": "029000000018",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "black beans case",
+      "black beans",
+      "beans 12 x 15 oz"
+    ]
+  },
+  {
+    "product_id": "DEMO-BEANS-EACH",
+    "name": "Black beans, 15 oz can",
+    "barcode": "029000000025",
+    "category": "dry",
+    "unit": "each",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "black beans can",
+      "black beans",
+      "beans 15 oz each"
+    ]
+  },
+  {
+    "product_id": "DEMO-OATS-CASE",
+    "name": "Rolled oats, 6 x 18 oz case",
+    "barcode": "029000000032",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "rolled oats case",
+      "oats",
+      "oats 6 x 18 oz"
+    ]
+  },
+  {
+    "product_id": "DEMO-OATS-EACH",
+    "name": "Rolled oats, 18 oz carton",
+    "barcode": "029000000049",
+    "category": "dry",
+    "unit": "each",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "rolled oats carton",
+      "oats",
+      "oats 18 oz each"
+    ]
+  },
+  {
+    "product_id": "DEMO-RICE-CASE",
+    "name": "Brown rice, 10 x 2 lb case",
+    "barcode": "029000000056",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "brown rice case",
+      "brown rice 10 x 2 lb"
+    ]
+  },
+  {
+    "product_id": "DEMO-TUNA-CASE",
+    "name": "Tuna in water, 24 x 5 oz case",
+    "barcode": "029000000063",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "tuna case",
+      "tuna 24 x 5 oz"
+    ]
+  },
+  {
+    "product_id": "DEMO-MILK-CASE",
+    "name": "Shelf stable milk, 12 x 1 L case",
+    "barcode": "029000000070",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "milk case",
+      "shelf stable milk 12 x 1 l"
+    ]
+  },
+  {
+    "product_id": "DEMO-APPLES-LB",
+    "name": "Mixed apples by measured pound",
+    "barcode": null,
+    "category": "produce",
+    "unit": "lb",
+    "requires_weight": true,
+    "requires_lot": false,
+    "requires_expiry": false,
+    "aliases": [
+      "mixed apples",
+      "apples by weight"
+    ]
+  },
+  {
+    "product_id": "DEMO-CARROTS-KG",
+    "name": "Loose carrots by measured kilogram",
+    "barcode": null,
+    "category": "produce",
+    "unit": "kg",
+    "requires_weight": true,
+    "requires_lot": false,
+    "requires_expiry": false,
+    "aliases": [
+      "loose carrots",
+      "carrots by weight"
+    ]
+  },
+  {
+    "product_id": "DEMO-PEAS-CASE",
+    "name": "Frozen peas, 12 x 16 oz case",
+    "barcode": "029000000100",
+    "category": "frozen",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "frozen peas case",
+      "peas 12 x 16 oz"
+    ]
+  },
+  {
+    "product_id": "DEMO-SOUP-CASE",
+    "name": "Vegetable soup, 12 x 18 oz case",
+    "barcode": "029000000117",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "vegetable soup case",
+      "soup 12 x 18 oz"
+    ]
+  },
+  {
+    "product_id": "DEMO-WATER-CASE",
+    "name": "Drinking water, 24 x 500 ml case",
+    "barcode": "029000000124",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": false,
+    "requires_expiry": false,
+    "aliases": [
+      "water case",
+      "drinking water 24 x 500 ml"
+    ]
+  },
+  {
+    "product_id": "DEMO-PEANUT-BUTTER-EACH",
+    "name": "Peanut butter, 16 oz jar",
+    "barcode": "029000000131",
+    "category": "dry",
+    "unit": "each",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "peanut butter jar",
+      "peanut butter 16 oz"
+    ]
+  },
+  {
+    "product_id": "DEMO-PASTA-CASE",
+    "name": "Whole wheat pasta, 20 x 1 lb case",
+    "barcode": "2900000000148",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "whole wheat pasta case",
+      "pasta 20 x 1 lb"
+    ]
+  },
+  {
+    "product_id": "DEMO-LENTILS-CASE",
+    "name": "Green lentils, 12 x 1 lb case",
+    "barcode": "029000000155",
+    "category": "dry",
+    "unit": "case",
+    "requires_weight": false,
+    "requires_lot": true,
+    "requires_expiry": true,
+    "aliases": [
+      "green lentils case",
+      "lentils 12 x 1 lb"
+    ]
+  },
+  {
+    "product_id": "DEMO-PRODUCE-LB",
+    "name": "Assorted produce by measured pound",
+    "barcode": null,
+    "category": "produce",
+    "unit": "lb",
+    "requires_weight": true,
+    "requires_lot": false,
+    "requires_expiry": false,
+    "aliases": [
+      "assorted produce",
+      "mixed produce by weight"
+    ]
+  }
+]

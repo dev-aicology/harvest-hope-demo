@@ -1,0 +1,1 @@
+observation_id,strategy,transaction_ref,accepted,correct_final_record,staff_seconds,correction_seconds,compute_seconds,model_cost_usd,hosting_cost_usd,staff_cost_usd

@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-18T04:42:45.760111+00:00",
+  "scope": "Three synthetic text-label illustrations only, not photographs or an operational accuracy sample.",
+  "engine": "Local Tesseract, fixed eng language and psm 6; no downloads or external calls",
+  "separate_from_text_benchmark": true,
+  "case_count": 3,
+  "ocr_success_count": 3,
+  "error_or_unavailable_count": 0,
+  "correct_item_count": 3,
+  "exact_label_line_count": 3,
+  "median_algorithm_ms": 478.337181,
+  "staff_time_seconds": null,
+  "operating_cost_usd": null,
+  "small_model_status": "not_run",
+  "cases": [
+    {
+      "case_id": "OCR-SYN-001",
+      "image": "labels/demo-beans-case.png",
+      "expected_product_id": "DEMO-BEANS-CASE",
+      "suggested_product_id": "DEMO-BEANS-CASE",
+      "ocr_status": "ok",
+      "error_type": null,
+      "elapsed_ms": 478.337181,
+      "exact_label_line_recovered": true,
+      "correct_item": true,
+      "text": "Illustration only. No real product or donor data.\n\nBlack beans, 12 x 15 oz case\n\nCatalog ID: DEMO-BEANS-CASE\n\nReceiving unit: case\n\nIllustrative local code: 029000000018\n\nNot a scan-ready barcode. Never use a public lookup.\nActual quantity / weight: NOT INFERRED\n\nFor UI attachment testing; not a warehouse photograph.\n",
+      "suggestion": {
+        "product_id": "DEMO-BEANS-CASE",
+        "method": "ocr_label_rules",
+        "requires_review": true,
+        "reason": "An OCR line exactly matches a catalog name or alias. Staff must verify the item."
+      }
+    },
+    {
+      "case_id": "OCR-SYN-002",
+      "image": "labels/demo-oats-case.png",
+      "expected_product_id": "DEMO-OATS-CASE",
+      "suggested_product_id": "DEMO-OATS-CASE",
+      "ocr_status": "ok",
+      "error_type": null,
+      "elapsed_ms": 633.462131,
+      "exact_label_line_recovered": true,
+      "correct_item": true,
+      "text": "Illustration only. No real product or donor data.\nRolled oats, 6 x 18 oz case\n\nCatalog ID: DEMO-OATS-CASE\n\nReceiving unit: case\n\nIllustrative local code: 029000000032\n\nNot a scan-ready barcode. Never use a public lookup.\nActual quantity / weight: NOT INFERRED\n\nFor UI attachment testing; not a warehouse photograph.\n",
+      "suggestion": {
+        "product_id": "DEMO-OATS-CASE",
+        "method": "ocr_label_rules",
+        "requires_review": true,
+        "reason": "An OCR line exactly matches a catalog name or alias. Staff must verify the item."
+      }
+    },
+    {
+      "case_id": "OCR-SYN-003",
+      "image": "labels/demo-apples-lb.png",
+      "expected_product_id": "DEMO-APPLES-LB",
+      "suggested_product_id": "DEMO-APPLES-LB",
+      "ocr_status": "ok",
+      "error_type": null,
+      "elapsed_ms": 366.717294,
+      "exact_label_line_recovered": true,
+      "correct_item": true,
+      "text": "Illustration only. No real product or donor data.\n\nMixed apples by measured pound\nCatalog ID: DEMO-APPLES-LB\n\nReceiving unit: Ib\n\nIllustrative local code: NONE \u2014 weigh actual donation\nNot a scan-ready barcode. Never use a public lookup.\nActual quantity / weight: NOT INFERRED\n\nFor UI attachment testing; not a warehouse photograph.\n",
+      "suggestion": {
+        "product_id": "DEMO-APPLES-LB",
+        "method": "ocr_label_rules",
+        "requires_review": true,
+        "reason": "An OCR line exactly matches a catalog name or alias. Staff must verify the item."
+      }
+    }
+  ]
+}

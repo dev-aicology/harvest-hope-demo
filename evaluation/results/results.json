@@ -1,0 +1,1974 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-18T04:42:29.717037+00:00",
+  "dataset": "Curated synthetic decision cases included with this repository",
+  "scope": "Algorithmic suggestion behavior only. Not warehouse outcomes, OCR accuracy, human baseline accuracy or time savings.",
+  "evidence_policy": "Only input.barcode and input.label_text are passed to strategies; labels remain in the scorer.",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux",
+    "machine": "x86_64"
+  },
+  "case_count": 62,
+  "catalog_item_count": 16,
+  "strategies": {
+    "form_only": {
+      "status": "measured_synthetic",
+      "case_count": 62,
+      "expected_match_count": 37,
+      "expected_abstain_count": 25,
+      "suggestion_count": 0,
+      "abstention_count": 62,
+      "unresolved_case_count": 62,
+      "all_cases_require_human_review": true,
+      "correct_match_count": 0,
+      "wrong_suggestion_count": 0,
+      "correct_abstention_count": 25,
+      "missed_match_count": 37,
+      "error_count": 0,
+      "suggestion_coverage": 0.0,
+      "suggestion_precision": null,
+      "known_item_recall": 0.0,
+      "exact_decision_accuracy": 0.403226,
+      "algorithm_latency_ms": {
+        "median": 0.001829,
+        "p95": 0.013047,
+        "total": 3.982396
+      },
+      "staff_time_seconds": null,
+      "staff_time_status": "not_measured; requires observed receiving study",
+      "operating_cost_usd": null,
+      "operating_cost_status": "not_measured; no hosting, labor, energy or token prices assumed",
+      "cases": [
+        {
+          "case_id": "SYN-001",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.013889
+        },
+        {
+          "case_id": "SYN-002",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-BEANS-EACH",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.006651
+        },
+        {
+          "case_id": "SYN-003",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.003979
+        },
+        {
+          "case_id": "SYN-004",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-OATS-EACH",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002297
+        },
+        {
+          "case_id": "SYN-005",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-RICE-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.00205
+        },
+        {
+          "case_id": "SYN-006",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-TUNA-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001789
+        },
+        {
+          "case_id": "SYN-007",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001677
+        },
+        {
+          "case_id": "SYN-008",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PEAS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001607
+        },
+        {
+          "case_id": "SYN-009",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-SOUP-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001706
+        },
+        {
+          "case_id": "SYN-010",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-WATER-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001724
+        },
+        {
+          "case_id": "SYN-011",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001625
+        },
+        {
+          "case_id": "SYN-012",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PASTA-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001634
+        },
+        {
+          "case_id": "SYN-013",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-LENTILS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.018368
+        },
+        {
+          "case_id": "SYN-014",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002754
+        },
+        {
+          "case_id": "SYN-015",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-BEANS-EACH",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001898
+        },
+        {
+          "case_id": "SYN-016",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001827
+        },
+        {
+          "case_id": "SYN-017",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-OATS-EACH",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001766
+        },
+        {
+          "case_id": "SYN-018",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-RICE-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001818
+        },
+        {
+          "case_id": "SYN-019",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-TUNA-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001831
+        },
+        {
+          "case_id": "SYN-020",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.011719
+        },
+        {
+          "case_id": "SYN-021",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-APPLES-LB",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002163
+        },
+        {
+          "case_id": "SYN-022",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-CARROTS-KG",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002161
+        },
+        {
+          "case_id": "SYN-023",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PEAS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001637
+        },
+        {
+          "case_id": "SYN-024",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-SOUP-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001678
+        },
+        {
+          "case_id": "SYN-025",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-WATER-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001689
+        },
+        {
+          "case_id": "SYN-026",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.00167
+        },
+        {
+          "case_id": "SYN-027",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PASTA-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002046
+        },
+        {
+          "case_id": "SYN-028",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-LENTILS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001607
+        },
+        {
+          "case_id": "SYN-029",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PRODUCE-LB",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001719
+        },
+        {
+          "case_id": "SYN-030",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001987
+        },
+        {
+          "case_id": "SYN-031",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001624
+        },
+        {
+          "case_id": "SYN-032",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001652
+        },
+        {
+          "case_id": "SYN-033",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-APPLES-LB",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001756
+        },
+        {
+          "case_id": "SYN-034",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001758
+        },
+        {
+          "case_id": "SYN-035",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002099
+        },
+        {
+          "case_id": "SYN-036",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001738
+        },
+        {
+          "case_id": "SYN-037",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001846
+        },
+        {
+          "case_id": "SYN-038",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001683
+        },
+        {
+          "case_id": "SYN-039",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002167
+        },
+        {
+          "case_id": "SYN-040",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.011767
+        },
+        {
+          "case_id": "SYN-041",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002355
+        },
+        {
+          "case_id": "SYN-042",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002193
+        },
+        {
+          "case_id": "SYN-043",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001772
+        },
+        {
+          "case_id": "SYN-044",
+          "category": "unknown_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001925
+        },
+        {
+          "case_id": "SYN-045",
+          "category": "unknown_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001814
+        },
+        {
+          "case_id": "SYN-046",
+          "category": "unknown_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001725
+        },
+        {
+          "case_id": "SYN-047",
+          "category": "missing_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002095
+        },
+        {
+          "case_id": "SYN-048",
+          "category": "missing_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001715
+        },
+        {
+          "case_id": "SYN-049",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001595
+        },
+        {
+          "case_id": "SYN-050",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001803
+        },
+        {
+          "case_id": "SYN-051",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001857
+        },
+        {
+          "case_id": "SYN-052",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001814
+        },
+        {
+          "case_id": "SYN-053",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001945
+        },
+        {
+          "case_id": "SYN-054",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002513
+        },
+        {
+          "case_id": "SYN-055",
+          "category": "consistent_evidence",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001872
+        },
+        {
+          "case_id": "SYN-056",
+          "category": "consistent_evidence",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.001683
+        },
+        {
+          "case_id": "SYN-057",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.00185
+        },
+        {
+          "case_id": "SYN-058",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.001767
+        },
+        {
+          "case_id": "SYN-059",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.01136
+        },
+        {
+          "case_id": "SYN-060",
+          "category": "oversized_text",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002368
+        },
+        {
+          "case_id": "SYN-061",
+          "category": "ocr_transcription_error",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 3.792272
+        },
+        {
+          "case_id": "SYN-062",
+          "category": "ocr_transcription_error",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "manual_entry",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.013047
+        }
+      ]
+    },
+    "barcode_only": {
+      "status": "measured_synthetic",
+      "case_count": 62,
+      "expected_match_count": 37,
+      "expected_abstain_count": 25,
+      "suggestion_count": 18,
+      "abstention_count": 44,
+      "unresolved_case_count": 44,
+      "all_cases_require_human_review": true,
+      "correct_match_count": 15,
+      "wrong_suggestion_count": 3,
+      "correct_abstention_count": 22,
+      "missed_match_count": 22,
+      "error_count": 0,
+      "suggestion_coverage": 0.290323,
+      "suggestion_precision": 0.833333,
+      "known_item_recall": 0.405405,
+      "exact_decision_accuracy": 0.596774,
+      "algorithm_latency_ms": {
+        "median": 0.002992,
+        "p95": 0.018107,
+        "total": 0.597625
+      },
+      "staff_time_seconds": null,
+      "staff_time_status": "not_measured; requires observed receiving study",
+      "operating_cost_usd": null,
+      "operating_cost_status": "not_measured; no hosting, labor, energy or token prices assumed",
+      "cases": [
+        {
+          "case_id": "SYN-001",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": "DEMO-BEANS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.20943
+        },
+        {
+          "case_id": "SYN-002",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-BEANS-EACH",
+          "suggested_product_id": "DEMO-BEANS-EACH",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.017923
+        },
+        {
+          "case_id": "SYN-003",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": "DEMO-OATS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.009837
+        },
+        {
+          "case_id": "SYN-004",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-OATS-EACH",
+          "suggested_product_id": "DEMO-OATS-EACH",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.00756
+        },
+        {
+          "case_id": "SYN-005",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-RICE-CASE",
+          "suggested_product_id": "DEMO-RICE-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006894
+        },
+        {
+          "case_id": "SYN-006",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-TUNA-CASE",
+          "suggested_product_id": "DEMO-TUNA-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006834
+        },
+        {
+          "case_id": "SYN-007",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": "DEMO-MILK-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.007062
+        },
+        {
+          "case_id": "SYN-008",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PEAS-CASE",
+          "suggested_product_id": "DEMO-PEAS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006296
+        },
+        {
+          "case_id": "SYN-009",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-SOUP-CASE",
+          "suggested_product_id": "DEMO-SOUP-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006049
+        },
+        {
+          "case_id": "SYN-010",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-WATER-CASE",
+          "suggested_product_id": "DEMO-WATER-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006839
+        },
+        {
+          "case_id": "SYN-011",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "suggested_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.005917
+        },
+        {
+          "case_id": "SYN-012",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PASTA-CASE",
+          "suggested_product_id": "DEMO-PASTA-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006483
+        },
+        {
+          "case_id": "SYN-013",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-LENTILS-CASE",
+          "suggested_product_id": "DEMO-LENTILS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.00614
+        },
+        {
+          "case_id": "SYN-014",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.004866
+        },
+        {
+          "case_id": "SYN-015",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-BEANS-EACH",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.003476
+        },
+        {
+          "case_id": "SYN-016",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002677
+        },
+        {
+          "case_id": "SYN-017",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-OATS-EACH",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.018107
+        },
+        {
+          "case_id": "SYN-018",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-RICE-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.003049
+        },
+        {
+          "case_id": "SYN-019",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-TUNA-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002904
+        },
+        {
+          "case_id": "SYN-020",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002672
+        },
+        {
+          "case_id": "SYN-021",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-APPLES-LB",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002411
+        },
+        {
+          "case_id": "SYN-022",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-CARROTS-KG",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002748
+        },
+        {
+          "case_id": "SYN-023",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PEAS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002389
+        },
+        {
+          "case_id": "SYN-024",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-SOUP-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.00235
+        },
+        {
+          "case_id": "SYN-025",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-WATER-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002491
+        },
+        {
+          "case_id": "SYN-026",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002773
+        },
+        {
+          "case_id": "SYN-027",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PASTA-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002547
+        },
+        {
+          "case_id": "SYN-028",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-LENTILS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.087799
+        },
+        {
+          "case_id": "SYN-029",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PRODUCE-LB",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002854
+        },
+        {
+          "case_id": "SYN-030",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002495
+        },
+        {
+          "case_id": "SYN-031",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.00245
+        },
+        {
+          "case_id": "SYN-032",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002486
+        },
+        {
+          "case_id": "SYN-033",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-APPLES-LB",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002752
+        },
+        {
+          "case_id": "SYN-034",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002406
+        },
+        {
+          "case_id": "SYN-035",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002459
+        },
+        {
+          "case_id": "SYN-036",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.016764
+        },
+        {
+          "case_id": "SYN-037",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002875
+        },
+        {
+          "case_id": "SYN-038",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002465
+        },
+        {
+          "case_id": "SYN-039",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.007223
+        },
+        {
+          "case_id": "SYN-040",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.003305
+        },
+        {
+          "case_id": "SYN-041",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002951
+        },
+        {
+          "case_id": "SYN-042",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.006848
+        },
+        {
+          "case_id": "SYN-043",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002934
+        },
+        {
+          "case_id": "SYN-044",
+          "category": "unknown_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.007312
+        },
+        {
+          "case_id": "SYN-045",
+          "category": "unknown_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002834
+        },
+        {
+          "case_id": "SYN-046",
+          "category": "unknown_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002613
+        },
+        {
+          "case_id": "SYN-047",
+          "category": "missing_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.003033
+        },
+        {
+          "case_id": "SYN-048",
+          "category": "missing_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002666
+        },
+        {
+          "case_id": "SYN-049",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002416
+        },
+        {
+          "case_id": "SYN-050",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002453
+        },
+        {
+          "case_id": "SYN-051",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002926
+        },
+        {
+          "case_id": "SYN-052",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": "DEMO-BEANS-CASE",
+          "method": "barcode",
+          "outcome": "wrong_suggestion",
+          "error_type": null,
+          "elapsed_ms": 0.006547
+        },
+        {
+          "case_id": "SYN-053",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": "DEMO-OATS-CASE",
+          "method": "barcode",
+          "outcome": "wrong_suggestion",
+          "error_type": null,
+          "elapsed_ms": 0.006329
+        },
+        {
+          "case_id": "SYN-054",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": "DEMO-SOUP-CASE",
+          "method": "barcode",
+          "outcome": "wrong_suggestion",
+          "error_type": null,
+          "elapsed_ms": 0.005973
+        },
+        {
+          "case_id": "SYN-055",
+          "category": "consistent_evidence",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": "DEMO-BEANS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006665
+        },
+        {
+          "case_id": "SYN-056",
+          "category": "consistent_evidence",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": "DEMO-OATS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.018949
+        },
+        {
+          "case_id": "SYN-057",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.003327
+        },
+        {
+          "case_id": "SYN-058",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.003041
+        },
+        {
+          "case_id": "SYN-059",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.00286
+        },
+        {
+          "case_id": "SYN-060",
+          "category": "oversized_text",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.002925
+        },
+        {
+          "case_id": "SYN-061",
+          "category": "ocr_transcription_error",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002633
+        },
+        {
+          "case_id": "SYN-062",
+          "category": "ocr_transcription_error",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.002333
+        }
+      ]
+    },
+    "barcode_plus_label_rules": {
+      "status": "measured_synthetic",
+      "case_count": 62,
+      "expected_match_count": 37,
+      "expected_abstain_count": 25,
+      "suggestion_count": 35,
+      "abstention_count": 27,
+      "unresolved_case_count": 27,
+      "all_cases_require_human_review": true,
+      "correct_match_count": 35,
+      "wrong_suggestion_count": 0,
+      "correct_abstention_count": 25,
+      "missed_match_count": 2,
+      "error_count": 0,
+      "suggestion_coverage": 0.564516,
+      "suggestion_precision": 1.0,
+      "known_item_recall": 0.945946,
+      "exact_decision_accuracy": 0.967742,
+      "algorithm_latency_ms": {
+        "median": 0.060249,
+        "p95": 0.83558,
+        "total": 9.880756
+      },
+      "staff_time_seconds": null,
+      "staff_time_status": "not_measured; requires observed receiving study",
+      "operating_cost_usd": null,
+      "operating_cost_status": "not_measured; no hosting, labor, energy or token prices assumed",
+      "cases": [
+        {
+          "case_id": "SYN-001",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": "DEMO-BEANS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.010846
+        },
+        {
+          "case_id": "SYN-002",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-BEANS-EACH",
+          "suggested_product_id": "DEMO-BEANS-EACH",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.007048
+        },
+        {
+          "case_id": "SYN-003",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": "DEMO-OATS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.007031
+        },
+        {
+          "case_id": "SYN-004",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-OATS-EACH",
+          "suggested_product_id": "DEMO-OATS-EACH",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.005821
+        },
+        {
+          "case_id": "SYN-005",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-RICE-CASE",
+          "suggested_product_id": "DEMO-RICE-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006979
+        },
+        {
+          "case_id": "SYN-006",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-TUNA-CASE",
+          "suggested_product_id": "DEMO-TUNA-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006682
+        },
+        {
+          "case_id": "SYN-007",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": "DEMO-MILK-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006674
+        },
+        {
+          "case_id": "SYN-008",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PEAS-CASE",
+          "suggested_product_id": "DEMO-PEAS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.005963
+        },
+        {
+          "case_id": "SYN-009",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-SOUP-CASE",
+          "suggested_product_id": "DEMO-SOUP-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006317
+        },
+        {
+          "case_id": "SYN-010",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-WATER-CASE",
+          "suggested_product_id": "DEMO-WATER-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.006841
+        },
+        {
+          "case_id": "SYN-011",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "suggested_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.390806
+        },
+        {
+          "case_id": "SYN-012",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-PASTA-CASE",
+          "suggested_product_id": "DEMO-PASTA-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.015965
+        },
+        {
+          "case_id": "SYN-013",
+          "category": "barcode_exact",
+          "expected_product_id": "DEMO-LENTILS-CASE",
+          "suggested_product_id": "DEMO-LENTILS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.746998
+        },
+        {
+          "case_id": "SYN-014",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": "DEMO-BEANS-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.130113
+        },
+        {
+          "case_id": "SYN-015",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-BEANS-EACH",
+          "suggested_product_id": "DEMO-BEANS-EACH",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.181647
+        },
+        {
+          "case_id": "SYN-016",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": "DEMO-OATS-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.83558
+        },
+        {
+          "case_id": "SYN-017",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-OATS-EACH",
+          "suggested_product_id": "DEMO-OATS-EACH",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.065021
+        },
+        {
+          "case_id": "SYN-018",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-RICE-CASE",
+          "suggested_product_id": "DEMO-RICE-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.133536
+        },
+        {
+          "case_id": "SYN-019",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-TUNA-CASE",
+          "suggested_product_id": "DEMO-TUNA-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.059326
+        },
+        {
+          "case_id": "SYN-020",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": "DEMO-MILK-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.124221
+        },
+        {
+          "case_id": "SYN-021",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-APPLES-LB",
+          "suggested_product_id": "DEMO-APPLES-LB",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.058466
+        },
+        {
+          "case_id": "SYN-022",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-CARROTS-KG",
+          "suggested_product_id": "DEMO-CARROTS-KG",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.639422
+        },
+        {
+          "case_id": "SYN-023",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PEAS-CASE",
+          "suggested_product_id": "DEMO-PEAS-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.060042
+        },
+        {
+          "case_id": "SYN-024",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-SOUP-CASE",
+          "suggested_product_id": "DEMO-SOUP-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.057107
+        },
+        {
+          "case_id": "SYN-025",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-WATER-CASE",
+          "suggested_product_id": "DEMO-WATER-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.057235
+        },
+        {
+          "case_id": "SYN-026",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "suggested_product_id": "DEMO-PEANUT-BUTTER-EACH",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.056657
+        },
+        {
+          "case_id": "SYN-027",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PASTA-CASE",
+          "suggested_product_id": "DEMO-PASTA-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.0568
+        },
+        {
+          "case_id": "SYN-028",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-LENTILS-CASE",
+          "suggested_product_id": "DEMO-LENTILS-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.057252
+        },
+        {
+          "case_id": "SYN-029",
+          "category": "label_exact",
+          "expected_product_id": "DEMO-PRODUCE-LB",
+          "suggested_product_id": "DEMO-PRODUCE-LB",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.057281
+        },
+        {
+          "case_id": "SYN-030",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": "DEMO-BEANS-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 1.017634
+        },
+        {
+          "case_id": "SYN-031",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": "DEMO-OATS-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.066879
+        },
+        {
+          "case_id": "SYN-032",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-MILK-CASE",
+          "suggested_product_id": "DEMO-MILK-CASE",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.52748
+        },
+        {
+          "case_id": "SYN-033",
+          "category": "label_normalized",
+          "expected_product_id": "DEMO-APPLES-LB",
+          "suggested_product_id": "DEMO-APPLES-LB",
+          "method": "label_rules",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.090371
+        },
+        {
+          "case_id": "SYN-034",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.062778
+        },
+        {
+          "case_id": "SYN-035",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.062504
+        },
+        {
+          "case_id": "SYN-036",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.05897
+        },
+        {
+          "case_id": "SYN-037",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.058987
+        },
+        {
+          "case_id": "SYN-038",
+          "category": "ambiguous_or_incomplete",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.058707
+        },
+        {
+          "case_id": "SYN-039",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.068497
+        },
+        {
+          "case_id": "SYN-040",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.060492
+        },
+        {
+          "case_id": "SYN-041",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.060166
+        },
+        {
+          "case_id": "SYN-042",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.05873
+        },
+        {
+          "case_id": "SYN-043",
+          "category": "invalid_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.068987
+        },
+        {
+          "case_id": "SYN-044",
+          "category": "unknown_barcode",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.065369
+        },
+        {
+          "case_id": "SYN-045",
+          "category": "unknown_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.060747
+        },
+        {
+          "case_id": "SYN-046",
+          "category": "unknown_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.084922
+        },
+        {
+          "case_id": "SYN-047",
+          "category": "missing_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.005093
+        },
+        {
+          "case_id": "SYN-048",
+          "category": "missing_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.004015
+        },
+        {
+          "case_id": "SYN-049",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 1.471526
+        },
+        {
+          "case_id": "SYN-050",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.060333
+        },
+        {
+          "case_id": "SYN-051",
+          "category": "package_variant",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.059398
+        },
+        {
+          "case_id": "SYN-052",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.081499
+        },
+        {
+          "case_id": "SYN-053",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.062141
+        },
+        {
+          "case_id": "SYN-054",
+          "category": "conflicting_evidence",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 1.282888
+        },
+        {
+          "case_id": "SYN-055",
+          "category": "consistent_evidence",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": "DEMO-BEANS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.066199
+        },
+        {
+          "case_id": "SYN-056",
+          "category": "consistent_evidence",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": "DEMO-OATS-CASE",
+          "method": "barcode",
+          "outcome": "correct_match",
+          "error_type": null,
+          "elapsed_ms": 0.082745
+        },
+        {
+          "case_id": "SYN-057",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.066849
+        },
+        {
+          "case_id": "SYN-058",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.066635
+        },
+        {
+          "case_id": "SYN-059",
+          "category": "untrusted_label",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.0642
+        },
+        {
+          "case_id": "SYN-060",
+          "category": "oversized_text",
+          "expected_product_id": null,
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "correct_abstention",
+          "error_type": null,
+          "elapsed_ms": 0.003334
+        },
+        {
+          "case_id": "SYN-061",
+          "category": "ocr_transcription_error",
+          "expected_product_id": "DEMO-BEANS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.059687
+        },
+        {
+          "case_id": "SYN-062",
+          "category": "ocr_transcription_error",
+          "expected_product_id": "DEMO-OATS-CASE",
+          "suggested_product_id": null,
+          "method": "abstain",
+          "outcome": "missed_match",
+          "error_type": null,
+          "elapsed_ms": 0.058317
+        }
+      ]
+    },
+    "barcode_then_local_model": {
+      "status": "not_run",
+      "reason": "No local model selected or invoked.",
+      "model_name": null,
+      "parameter_count": null,
+      "staff_time_seconds": null,
+      "operating_cost_usd": null
+    }
+  }
+}

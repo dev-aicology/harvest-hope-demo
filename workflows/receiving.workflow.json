@@ -1,0 +1,112 @@
+{
+  "schema_version": "receiving-concept/1",
+  "name": "Receiving assistance with staff approval",
+  "status": "internal_draft",
+  "format_notice": "Project-owned conceptual specification. Not a native iBlueprint export or an importable vendor workflow.",
+  "execution_notice": "Executable behavior lives in receiving/workflow.py. External vendor steps are not implemented.",
+  "default_mode": "demo",
+  "data_classification": "synthetic_only",
+  "steps": [
+    {
+      "id": "capture",
+      "owner": "receiver",
+      "purpose": "Capture one physical delivery with actual quantities and required evidence.",
+      "inputs": [
+        "supplier",
+        "warehouse",
+        "delivery_ref",
+        "purchase_order_ref",
+        "received_on",
+        "lines"
+      ],
+      "output": "versioned_draft"
+    },
+    {
+      "id": "suggest_item",
+      "owner": "application",
+      "purpose": "Suggest a known catalog item or abstain.",
+      "mechanisms": [
+        "exact_barcode_lookup",
+        "conservative_label_rules",
+        "optional_explicit_local_text_model"
+      ],
+      "must_not_supply": [
+        "trusted_quantity",
+        "measured_weight",
+        "food_safety_decision",
+        "approval"
+      ],
+      "output": "separate_suggestion"
+    },
+    {
+      "id": "validate",
+      "owner": "receiver",
+      "purpose": "Check the physical items and actual measurements; resolve blocking flags.",
+      "required": [
+        "known_catalog_item",
+        "catalog_unit",
+        "actual_quantity",
+        "required_weight_lot_expiry",
+        "explicit_line_check"
+      ],
+      "on_failure": "draft",
+      "output": "in_review"
+    },
+    {
+      "id": "approve",
+      "owner": "reviewer",
+      "purpose": "Approve a specific revision independently of the latest content editor.",
+      "guards": [
+        "expected_version_matches",
+        "different_actor_from_latest_editor",
+        "no_blocking_flags"
+      ],
+      "on_edit": "revoke_approval_and_return_to_draft",
+      "output": "immutable_approved_snapshot"
+    },
+    {
+      "id": "handoff",
+      "owner": "reviewer",
+      "implementation": "local_mock_only",
+      "purpose": "Demonstrate a repeatable handoff without changing inventory.",
+      "guards": [
+        "approved_snapshot_unchanged",
+        "existing_purchase_order_reference",
+        "idempotency_key"
+      ],
+      "future_destination": "WAERlinx_under_verified_vendor_contract",
+      "output": "sent_mock"
+    },
+    {
+      "id": "reconcile",
+      "owner": "application_and_reviewer",
+      "implementation": "local_simulation_only",
+      "purpose": "Compare returned values with the approved receipt.",
+      "compare": [
+        "receipt_id",
+        "supplier",
+        "warehouse",
+        "delivery_ref",
+        "purchase_order_ref",
+        "received_on",
+        "every_line_and_its_fields"
+      ],
+      "on_match": "reconciled_mock",
+      "on_difference": "mismatch_mock",
+      "real_system_verified": false
+    }
+  ],
+  "proposed_iblueprint_role": {
+    "capability_basis": "Private project planning notes",
+    "purpose": "Coordinate selected steps, exceptions, and human approvals after its execution contract is verified.",
+    "native_execution_api_verified": false,
+    "live_deployment_verified": false
+  },
+  "external_prerequisites": [
+    "Existing NetSuite purchase order and its WAERlinx counterpart",
+    "Validated item and unit mapping",
+    "Authorized vendor sandbox and documented execution API",
+    "Defined retry, reconciliation, adjustment, and exception procedures",
+    "Confirmed platform licensing, data governance, and support ownership"
+  ]
+}

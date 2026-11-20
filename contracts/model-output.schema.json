@@ -1,0 +1,46 @@
+{
+  "$comment": "Application-owned draft contract. Not an iBlueprint, WaerLinx or NetSuite API specification.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "certainty": {
+      "enum": [
+        "uncertain",
+        "possible",
+        "likely"
+      ],
+      "title": "Certainty",
+      "type": "string"
+    },
+    "evidence": {
+      "default": "",
+      "maxLength": 200,
+      "title": "Evidence",
+      "type": "string"
+    },
+    "product_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Product Id"
+    },
+    "reason": {
+      "maxLength": 500,
+      "minLength": 1,
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "product_id",
+    "reason",
+    "certainty"
+  ],
+  "title": "ModelSuggestion",
+  "type": "object"
+}

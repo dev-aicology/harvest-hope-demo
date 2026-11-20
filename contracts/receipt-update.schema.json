@@ -1,0 +1,207 @@
+{
+  "$comment": "Application-owned draft contract. Not an iBlueprint, WaerLinx or NetSuite API specification.",
+  "$defs": {
+    "Line": {
+      "additionalProperties": false,
+      "properties": {
+        "barcode": {
+          "default": "",
+          "maxLength": 32,
+          "title": "Barcode",
+          "type": "string"
+        },
+        "checked": {
+          "default": false,
+          "title": "Checked",
+          "type": "boolean"
+        },
+        "description": {
+          "default": "",
+          "maxLength": 300,
+          "title": "Description",
+          "type": "string"
+        },
+        "disposition": {
+          "default": "available",
+          "enum": [
+            "available",
+            "hold"
+          ],
+          "title": "Disposition",
+          "type": "string"
+        },
+        "expiry_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expiry Date"
+        },
+        "line_id": {
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_-]+$",
+          "title": "Line Id",
+          "type": "string"
+        },
+        "lot": {
+          "default": "",
+          "maxLength": 120,
+          "title": "Lot",
+          "type": "string"
+        },
+        "measured_weight": {
+          "anyOf": [
+            {
+              "maximum": 1000000.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d{0,3}0*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Measured Weight"
+        },
+        "product_id": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Product Id"
+        },
+        "quantity": {
+          "anyOf": [
+            {
+              "maximum": 1000000.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d{0,3}0*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantity"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "enum": [
+                "case",
+                "each",
+                "lb",
+                "kg"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "weight_unit": {
+          "anyOf": [
+            {
+              "enum": [
+                "lb",
+                "kg"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Unit"
+        }
+      },
+      "title": "Line",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "delivery_ref": {
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Delivery Ref",
+      "type": "string"
+    },
+    "expected_version": {
+      "minimum": 1,
+      "title": "Expected Version",
+      "type": "integer"
+    },
+    "lines": {
+      "items": {
+        "$ref": "#/$defs/Line"
+      },
+      "maxItems": 100,
+      "title": "Lines",
+      "type": "array"
+    },
+    "notes": {
+      "default": "",
+      "maxLength": 2000,
+      "title": "Notes",
+      "type": "string"
+    },
+    "purchase_order_ref": {
+      "default": "",
+      "maxLength": 120,
+      "title": "Purchase Order Ref",
+      "type": "string"
+    },
+    "received_on": {
+      "format": "date",
+      "title": "Received On",
+      "type": "string"
+    },
+    "supplier": {
+      "maxLength": 160,
+      "minLength": 1,
+      "title": "Supplier",
+      "type": "string"
+    },
+    "warehouse": {
+      "default": "DEMO-DOCK-1",
+      "maxLength": 80,
+      "minLength": 1,
+      "title": "Warehouse",
+      "type": "string"
+    }
+  },
+  "required": [
+    "supplier",
+    "delivery_ref",
+    "expected_version"
+  ],
+  "title": "ReceiptUpdate",
+  "type": "object"
+}

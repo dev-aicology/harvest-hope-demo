@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Receiving desk · Harvest Hope project draft</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to receipt</a>
+  <div class="demo-banner"><strong>LOCAL DEMO</strong><span>Synthetic examples only. Warehouse handoff is simulated. No live inventory is changed.</span></div>
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark" aria-hidden="true">R</div><div><p class="eyebrow">HARVEST HOPE PROJECT DRAFT</p><h1>Receiving desk</h1></div></div>
+    <div class="identity"><label for="identity">Demo identity</label><select id="identity"><option value="receiver">Receiver · capture &amp; check</option><option value="reviewer">Reviewer · approve &amp; compare</option></select><span class="small">Role demonstration, not a secure sign-in</span></div>
+  </header>
+  <div id="message" class="message" role="status" aria-live="polite" tabindex="-1" hidden></div>
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Saved receipts">
+      <div class="sidebar-heading"><h2>Receipts</h2><button id="refresh-list" class="icon-button" type="button" aria-label="Refresh receipts">↻</button></div>
+      <button id="new-receipt" class="button primary full" type="button">+ New receipt</button>
+      <p class="small muted">One record per actual delivery. Partial deliveries need separate delivery references.</p>
+      <div id="receipt-list" class="receipt-list"></div>
+      <div class="sidebar-note"><span class="eyebrow">THE HUMAN CHECK</span><p>Suggestions help identify an item. A person confirms quantities, weights, condition, and the record.</p></div>
+    </aside>
+    <main id="workspace" tabindex="-1">
+      <div class="workspace-heading"><div><p class="eyebrow">INBOUND RECEIVING</p><h2 id="receipt-title">New receipt</h2><p id="receipt-subtitle" class="muted">Capture what arrived, then ask a colleague to review.</p></div><span id="receipt-status" class="status status-draft">Unsaved</span></div>
+      <ol class="steps" aria-label="Receipt workflow"><li data-step="capture"><span>1</span>Capture</li><li data-step="review"><span>2</span>Staff review</li><li data-step="handoff"><span>3</span>Mock handoff</li><li data-step="compare"><span>4</span>Mock comparison</li></ol>
+      <form id="receipt-form" novalidate>
+        <section class="panel" aria-labelledby="delivery-heading"><div class="panel-heading"><div><h3 id="delivery-heading">Delivery details</h3><p class="small muted">Use the actual delivery reference, not the purchase-order number.</p></div><button id="sample-receipt" class="button quiet" type="button">Use demo example</button></div>
+          <div class="fields three-col">
+            <label>Supplier or donor <span class="required">*</span><input id="supplier" name="supplier" maxlength="160" required autocomplete="off"></label>
+            <label>Delivery reference <span class="required">*</span><input id="delivery_ref" name="delivery_ref" maxlength="120" required autocomplete="off"></label>
+            <label>Receiving date <span class="required">*</span><input id="received_on" name="received_on" type="date" required></label>
+            <label>Warehouse <span class="required">*</span><input id="warehouse" name="warehouse" maxlength="80" required autocomplete="off"></label>
+            <label class="span-two">Existing purchase-order reference<input id="purchase_order_ref" name="purchase_order_ref" maxlength="120" autocomplete="off" aria-describedby="po-hint"><span id="po-hint" class="field-hint">Required for a handoff. This draft does not create purchase orders.</span></label>
+            <label class="span-all">Delivery notes<textarea id="notes" name="notes" maxlength="2000" rows="2" placeholder="Record an exception or receiving detail."></textarea></label>
+          </div>
+        </section>
+        <section class="panel" aria-labelledby="items-heading"><div class="panel-heading"><div><h3 id="items-heading">What arrived</h3><p class="small muted">Enter a barcode with a keyboard or USB scanner. Count and weigh the goods yourself.</p></div><button id="add-line" class="button quiet" type="button">+ Add item</button></div><div id="line-items" class="line-items"></div></section>
+        <section id="checks-panel" class="panel" aria-labelledby="checks-heading"><div class="panel-heading"><h3 id="checks-heading">Record checks</h3><span id="check-count" class="small muted">Save to check</span></div><div id="validation-list"><p class="muted">Save the draft to check catalog matches, units, and required receiving fields.</p></div></section>
+        <section class="panel" aria-labelledby="photos-heading"><div class="panel-heading"><div><h3 id="photos-heading">Supporting photos</h3><p id="photo-hint" class="small muted">Optional PNG or JPEG, up to 4 MB. Photos are supporting evidence; this draft does not read or count them.</p></div></div><div class="photo-upload"><label class="button quiet file-button" for="photo-file">Choose a photo<input id="photo-file" type="file" accept="image/png,image/jpeg" aria-describedby="photo-hint"></label><span id="photo-policy" class="small muted">Save a draft first. Uploaded copies have image metadata removed.</span></div><div id="photos" class="photos"></div></section>
+        <section class="panel actions-panel" aria-labelledby="next-heading"><div><h3 id="next-heading">Next step</h3><p id="action-hint" class="small muted">Save your progress, check each item, then submit for review.</p></div><div class="actions"><button id="save-receipt" type="submit" class="button secondary">Save draft</button><button id="submit-receipt" type="button" class="button primary">Send for review</button><button id="reload-receipt" type="button" class="button quiet">Reload saved receipt</button></div><div id="review-actions" hidden><label class="review-note">Review note<textarea id="review-note" rows="2" maxlength="1000" placeholder="Required when returning a receipt for correction."></textarea></label><div class="actions"><button id="approve-receipt" class="button primary" type="button">Approve receipt</button><button id="return-receipt" class="button quiet" type="button">Return for correction</button></div></div><div id="handoff-actions" hidden><p class="small muted">Creates a local example handoff only. It does not contact WaerLinx or NetSuite.</p><button id="handoff-receipt" class="button primary" type="button">Create mock handoff</button></div><div id="reconcile-actions" hidden><p class="small muted">Compare a simulated response with the approved record.</p><div class="actions"><button id="reconcile-receipt" class="button primary" type="button">Run mock comparison</button><button id="mismatch-receipt" class="button quiet" type="button">Test a mismatched response</button></div></div><div id="handoff-summary" hidden></div></section>
+      </form>
+      <section id="record-panel" class="panel record-panel" hidden aria-labelledby="record-heading"><div class="panel-heading"><div><h3 id="record-heading">Record history &amp; export</h3><p class="small muted">The JSON export is a draft interchange format, not a vendor import file.</p></div><div class="actions"><button id="load-audit" class="button quiet" type="button">View audit history</button><button id="export-receipt" class="button quiet" type="button">Download JSON</button></div></div><div id="audit-result" hidden></div></section>
+      <footer class="workspace-footer">Draft receiving workflow · Local synthetic demo · Review with warehouse staff before any pilot</footer>
+    </main>
+  </div>
+</body>
+</html>

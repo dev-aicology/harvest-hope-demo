@@ -1,0 +1,12 @@
+[
+  {
+    "image": "labels/demo-beans-case.png",
+    "label_text": "Black beans, 12 x 15 oz case",
+    "provenance": "Hand-authored synthetic transcription; no OCR engine was used."
+  },
+  {
+    "image": "labels/demo-oats-case.png",
+    "label_text": "ro11ed oats 6 x 18 oz",
+    "provenance": "Hand-authored OCR-like noise for error-handling tests; not measured OCR output."
+  }
+]

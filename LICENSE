@@ -1,0 +1,14 @@
+LICENSE STATUS — INTERNAL REVIEW DRAFT
+
+The intended license for original source code and synthetic project material is
+MIT. A proposed license text is included in LICENSE-MIT.proposed.txt for review.
+That proposed text is not activated by this draft.
+
+The project owners must confirm ownership, the final copyright notice, and
+permission to release before public distribution under an open-source license.
+This repository makes no license grant for iBlueprint, WAERlinx, NetSuite,
+partner records, source documents, third-party dependencies, or model weights.
+Those materials remain governed by their respective rights and terms.
+
+Use this repository for the authorized internal project review. Do not present
+the private draft as an already released open-source project.

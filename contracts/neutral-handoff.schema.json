@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Internal simulation envelope; not a supported vendor import file.",
+  "properties": {
+    "delivery_ref": {
+      "type": "string"
+    },
+    "lines": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "disposition": {
+            "const": "available"
+          },
+          "expiry_date": {
+            "format": "date",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "line_id": {
+            "type": "string"
+          },
+          "lot": {
+            "type": "string"
+          },
+          "measured_weight": {
+            "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "product_id": {
+            "type": "string"
+          },
+          "quantity": {
+            "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+            "type": "string"
+          },
+          "unit": {
+            "enum": [
+              "case",
+              "each",
+              "lb",
+              "kg"
+            ]
+          },
+          "weight_unit": {
+            "enum": [
+              "lb",
+              "kg",
+              null
+            ]
+          }
+        },
+        "required": [
+          "line_id",
+          "product_id",
+          "quantity",
+          "unit",
+          "measured_weight",
+          "weight_unit",
+          "lot",
+          "expiry_date",
+          "disposition"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "purchase_order_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "receipt_id": {
+      "type": "string"
+    },
+    "received_on": {
+      "format": "date",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "receiving-draft/1"
+    },
+    "supplier": {
+      "type": "string"
+    },
+    "warehouse": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "supplier",
+    "delivery_ref",
+    "warehouse",
+    "purchase_order_ref",
+    "received_on",
+    "lines"
+  ],
+  "title": "Approved receiving handoff (project-owned draft)",
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+# Direct runtime dependencies pinned to versions used for this draft's checks.
+fastapi==0.141.1
+starlette==1.6.0
+uvicorn==0.52.1
+pydantic==2.13.4
+httpx==0.28.1
+Pillow==13.0.0

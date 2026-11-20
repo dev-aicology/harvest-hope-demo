@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-11-18T04:42:09.436307+00:00",
+  "status": "no_observations_yet",
+  "caution": "No savings or causal comparison inferred. Use matched tasks and report missing-data denominators.",
+  "strategies": {
+    "manual": {
+      "observations": 0,
+      "accepted_receipts": 0,
+      "audited_records": 0,
+      "audited_final_record_accuracy": null,
+      "staff_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "correction_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "compute_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "cost_complete_observations": 0,
+      "measured_total_cost_usd": null,
+      "measured_cost_per_accepted_receipt_usd": null
+    },
+    "barcode_ocr": {
+      "observations": 0,
+      "accepted_receipts": 0,
+      "audited_records": 0,
+      "audited_final_record_accuracy": null,
+      "staff_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "correction_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "compute_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "cost_complete_observations": 0,
+      "measured_total_cost_usd": null,
+      "measured_cost_per_accepted_receipt_usd": null
+    },
+    "small_model": {
+      "observations": 0,
+      "accepted_receipts": 0,
+      "audited_records": 0,
+      "audited_final_record_accuracy": null,
+      "staff_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "correction_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "compute_seconds": {
+        "measured_observations": 0,
+        "median": null
+      },
+      "cost_complete_observations": 0,
+      "measured_total_cost_usd": null,
+      "measured_cost_per_accepted_receipt_usd": null
+    }
+  }
+}
